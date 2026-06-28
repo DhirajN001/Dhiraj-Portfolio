@@ -229,3 +229,21 @@ button:hover{
     .ad{
     width:75%;
     }
+
+    .btn{
+        display:inline-block;
+        margin-top:30px;
+        padding:15px 35px;
+        background:#2563eb;
+        color:white;
+        text-decoration:none;
+        border-radius:10px;
+        font-size:18px;
+        font-weight:600;
+        transition:0.3s;
+    }
+    
+    .btn:hover{
+        background:#1d4ed8;
+        transform:translateY(-4px);
+    }
