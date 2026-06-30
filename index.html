@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -18,24 +20,26 @@
 <nav>
 
 <h2>Dhiraj.</h2>
+<div class="menu-toggle" id="menu-toggle">
+    ☰
+</div>
 
-<ul>
+<ul class="nav-links" id="nav-links">
 
-<li><a href="#">Home</a></li>
-
-<li><a href="#">About</a></li>
-
-<li><a href="#">Skills</a></li>
-
-<li><a href="#">Experience</a></li>
-
-<li><a href="#">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certificates</a></li>
 
 </ul>
 
+
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
 
 
 <div class="left">
@@ -44,7 +48,9 @@
 
 <h2>Dhiraj Nimbalkar</h2>
 
-<h3>Technical Support Engineer</h3>
+<h3 class="typing-text">
+    <span id="typing"></span>
+</h3>
 
 <p>
 Windows | Desktop Support | Networking | Printer Support
@@ -66,7 +72,7 @@ Windows | Desktop Support | Networking | Printer Support
 
 <!-- About Section -->
 
-<section class="about">
+<section class="about" id="about" data-aos="fade-up">
 
     <div class="about-image">
         <img src="images/Profile.png" alt="Dhiraj">
@@ -109,7 +115,7 @@ Windows | Desktop Support | Networking | Printer Support
 
 <!-- Skills Section -->
 
-<section class="skills">
+<section class="skills" id="skills" data-aos="zoom-in">
 
     <h2>My Technical Skills</h2>
 
@@ -155,7 +161,214 @@ Windows | Desktop Support | Networking | Printer Support
 
 </section>
 
+<!-- Experience Section -->
 
+<section class="experience" id="experience" data-aos="fade-left">
+
+    <h2>My Experience</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>Technical Support Engineer</h3>
+                <span>Accel IT Services | Jabil India Pvt. Ltd.</span>
+
+                <p>
+                    Provided Windows troubleshooting, Desktop Support,
+                    Printer Support, Networking, Outlook configuration,
+                    Driver installation, VPN support and Remote Assistance.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>Desktop Support</h3>
+
+                <p>
+                    Windows Installation, Software Installation,
+                    User Account Management,
+                    Hardware Troubleshooting and Driver Installation.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <h3>Networking Support</h3>
+
+                <p>
+                    DNS, DHCP, IP Configuration,
+                    VPN Connectivity,
+                    Network Troubleshooting.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Projects Section -->
+
+<section class="projects" id="projects" data-aos="fade-up">
+
+    <h2>Technical Support Projects</h2>
+    
+    <div class="project-container">
+    
+    <div class="project-card">
+    <h3>Windows Installation</h3>
+    <p>
+    Installed Windows 10/11, configured drivers,
+    Windows updates and user accounts.
+    </p>
+    </div>
+    
+    <div class="project-card">
+    <h3>Printer Troubleshooting</h3>
+    <p>
+    Resolved printer issues, installed drivers,
+    configured Zebra and network printers.
+    </p>
+    </div>
+    
+    <div class="project-card">
+    <h3>Desktop Support</h3>
+    <p>
+    Hardware troubleshooting, software installation,
+    Outlook configuration and remote support.
+    </p>
+    </div>
+    
+    <div class="project-card">
+    <h3>Networking Support</h3>
+    <p>
+    Configured IP, DNS, DHCP, VPN and solved
+    network connectivity issues.
+    </p>
+    </div>
+    
+    <div class="project-card">
+    <h3>Active Directory</h3>
+    <p>
+    Created users, reset passwords,
+    unlocked accounts and managed permissions.
+    </p>
+    </div>
+    
+    <div class="project-card">
+    <h3>Driver Installation</h3>
+    <p>
+    Installed chipset, LAN, Wi-Fi,
+    graphics and printer drivers.
+    </p>
+    </div>
+    
+    </div>
+    
+    </section>
+
+    <!-- Certifications Section -->
+
+    <section class="certifications" id="certifications" data-aos="zoom-in">
+
+    <h2>My Certifications</h2>
+
+    <div class="certificate-container">
+
+        <div class="certificate-card">
+            <h3>Microsoft Windows</h3>
+            <p>Windows Installation, Configuration & Troubleshooting</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Desktop Support</h3>
+            <p>Hardware, Software Installation & End User Support</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Networking Fundamentals</h3>
+            <p>TCP/IP, DNS, DHCP, VPN & Network Troubleshooting</p>
+        </div>
+
+        <div class="certificate-card">
+            <h3>Printer Support</h3>
+            <p>HP, Zebra, Driver Installation & Network Printers</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- Contact Section -->
+
+<section class="contact" id="contact" data-aos="fade-up">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <h3>Email</h3>
+            <p>dhirajnimbalkar142@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Phone</h3>
+            <p>+91 7798545868</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/dhiraj-nimbalkar-67ba2926a/" target="_blank">
+                View Profile
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/DhirajN001" target="_blank">
+                View GitHub
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <h2>Dhiraj Nimbalkar</h2>
+
+    <p>Technical Support Engineer</p>
+
+    <div class="footer-links">
+
+        <a href="https://www.linkedin.com/in/dhiraj-nimbalkar-67ba2926a/" target="_blank">LinkedIn</a>
+
+        <a href="https://github.com/DhirajN001" target="_blank">GitHub</a>
+
+        <a href="mailto:dhirajnimbalkar142@gmail.com">Email</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Dhiraj Nimbalkar 
+    </p>
+
+</footer>
+
+<button id="topBtn" title="Go to top">↑</button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script src="script.js"></script>
 
