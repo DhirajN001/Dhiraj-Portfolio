@@ -90,3 +90,74 @@ menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
+document.getElementById("contact-form").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+emailjs.sendForm(
+'YOUR_SERVICE_ID',
+'YOUR_TEMPLATE_ID',
+this
+)
+
+.then(function(){
+
+alert("Message Sent Successfully ✅");
+
+document.getElementById("contact-form").reset();
+
+},function(error){
+
+alert("Failed ❌");
+
+});
+
+});
+
+
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
+
+    e.preventDefault();
+    
+    emailjs.sendForm(
+    'YOUR_SERVICE_ID',
+    'YOUR_TEMPLATE_ID',
+    this
+    )
+    
+    .then(function(){
+    
+    alert("Message Sent Successfully ✅");
+    
+    document.getElementById("contact-form").reset();
+    
+    },function(error){
+    
+    alert("Failed ❌");
+    
+    });
+    
+    });
+
+
+    // Theme Toggle
+
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", ()=>{
+
+    document.body.classList.toggle("light");
+
+    if(document.body.classList.contains("light")){
+
+        themeBtn.innerHTML="🌞";
+
+    }else{
+
+        themeBtn.innerHTML="🌙";
+
+    }
+
+});
+
